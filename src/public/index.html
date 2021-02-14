@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Lol Skins</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ 
+
+
+<div class="containerPrincipal">
+
+
+  <div class="tablaPuntuacionesDiv" id="tablaPuntuacionesDiv">
+
+    <div class="contadorDiv">
+
+      <p><span id="cuentaAtras">60</span> Seg </p> <img src="img/relojdearena1.png" id="RelojIcon">
+
+    </div>
+
+
+    <div class="rondasDiv">
+
+      <p>Ronda: <span id="numeroRonda">1</span>/15</p>
+
+    </div>
+  
+
+    <div class="jugadoresDiv">
+
+      <p class="posicionJugador">Posicion: 1</p>
+      <p class="nickname">Rodrigo de la sarna</p>
+      <p class="puntuacion">60000 pts.</p>
+
+    </div>
+
+    <div class="jugadoresDiv">
+
+      <p class="posicionJugador">Posicion: 2</p>
+      <p class="nickname">Juan Pablo</p>
+      <p class="puntuacion">40000 pts.</p>
+
+    </div>
+
+    <div class="jugadoresDiv">
+
+      <p class="posicionJugador">Posicion: 3</p>
+      <p class="nickname">Hayko Caína</p>
+      <p class="puntuacion">20000 pts.</p>
+
+    </div>
+
+  </div>
+
+
+<main id="container-skin">
+
+  <div id="id">
+
+    <div id="capaSuperficial"></div>
+  
+  </div>
+
+  <img src="img/fondo.png" id="img-skin">
+
+  <div class="containerInputTexto" id="containerInputTexto">
+
+    <form id="formularioPalabra" action="" method="post">
+
+      <input type="text" name="entradaPalabra" id="entradaPalabra" class="entradaPalabra" value="vayne"> 
+      
+      <input type="submit" id="botonEnviar" value="enviar" disabled>
+    
+    </form>
+
+  </div>
+
+</main>
+
+
+
+</div>
+
+
+
+<div class="containerDiv">
+
+  <div class="registroUsuarioDiv">
+
+    <form method="post" id="registroUsuarioForm" >
+
+      <label for="nombreUsuarioInput">Indica tu nombre:</label>
+
+      <input type="text" name="nombreUsuario" id="nombreUsuarioInput" value="Explosiboo">
+
+      <input type="submit" value="Entrar" id="nombreUsuarioSubmit">
+
+    </form>
+
+
+  </div>
+
+</div>
+
+  <!-- Sirve para conectar el cliente con el servidor -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

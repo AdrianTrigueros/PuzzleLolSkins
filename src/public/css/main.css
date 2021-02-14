@@ -1,0 +1,232 @@
+
+
+:root{
+
+  --colorPrincipal: #FF8C00;
+  --colorSecundario: #0073FF;
+  --colorPrincipalTono2: #CF8730;
+  --colorSecundarioTono2: #3078CF;
+  --colorTerciario3: #ffd54b;
+  --colorTerciarioTono3: #CFAA30;
+
+  --colorBorder: #9f9f9f;
+
+  --paleta1: #DAF7A6;
+  --paleta2: #FFC300;
+  --paleta3: #FF5733;
+  --paleta4: #C70039;
+  --paleta5: #900C3F;
+  --paleta6: #581845;
+
+
+}
+
+
+body{
+  background: #4079BF;
+  font-size: 1.5rem;
+}
+
+main{
+  width: 70%;
+}
+
+#capaSuperficial{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 1100px;
+  height: 649px; 
+  position: absolute;
+ /* right: -200px; /* 495px */
+ /* top: 63px;*/
+}
+
+#img-skin{
+  width: 100%;
+  display: block;
+  opacity: 0;
+}
+
+
+
+.cuadrados{
+
+  background: white;
+  border: solid 1px black;
+  display: inline-block;
+
+}
+
+#botonEmpezar{
+  width: 800px;
+  height: 60px;
+  background-color: #539732;
+  margin: 5% 0% 0% 10%;
+  font-size: 1.5rem;
+  padding: 2% 0% 5% 0%;
+  border-color: var(--paleta5);
+  box-shadow: 0px 0px 12px 2px;
+}
+
+/*---------------------------------------------*/
+
+.containerPrincipal{
+  max-width: 1700px;
+  min-width: 1100px;
+  margin: 0px auto;
+  margin-top: 50px;
+
+  padding: 2.5%;
+  background: var(--colorPrincipalTono2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tablaPuntuacionesDiv{
+  width: 25%;
+  min-height: 1050px;
+  margin-right: 5%;
+  background: var(--colorTerciarioTono3);
+  text-align: center;
+  border-radius: 5%;
+  border-color: darkslategray;
+  border:solid 5px;
+}
+
+.contadorDiv, .rondasDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid;
+  border-color: var(--paleta5);
+
+}
+
+.jugadoresDiv{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 25px;
+}
+
+.jugadoresDiv p{
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 5%;
+    background: #ff3838ed;
+    margin: 0px;
+}
+
+.posicionJugador{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  line-height: 50px;
+  border-bottom: 3px solid var(--colorBorder);
+  border-top: 3px solid var(--colorBorder);
+}
+
+.nickname{
+  border-left: 3px solid var(--colorBorder);
+  border-bottom: 3px solid var(--colorBorder);
+  border-top: 3px solid var(--colorBorder);
+}
+
+.puntuacion{
+  border-left: 3px solid var(--colorBorder);
+  border-bottom: 3px solid var(--colorBorder);
+}
+
+.containerInputTexto{
+  padding: 5%;
+
+}
+.containerInputTexto form{
+  display: flex;
+}
+
+.containerInputTexto form input{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.containerInputTexto form input[type="submit"]{
+  font-size: 1.5rem;
+  background-color: red;
+  color: black;
+  margin-left: 18px;
+  border-radius: 5%;
+}
+
+
+.entradaPalabra{
+  padding: 2%;
+  background: var(--colorPrincipal);
+  outline-color: var(--paleta6);
+  border-color: var(--paleta6);
+}
+
+#botonEnviar{
+  width: 20%;
+}
+
+/* El juego ocultado */
+
+#id, .containerPrincipal{
+  display: none;
+}
+
+body{
+  height: 100vh;
+}
+
+.containerDiv{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  align-items: center;
+
+}
+
+.registroUsuarioDiv{
+  width: 600px;
+  border-radius: 5%;
+  background-color: darkorange;
+  padding: 1rem;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.registroUsuarioDiv label{
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#nombreUsuarioInput{
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+#nombreUsuarioSubmit{
+    font-weight: 800;
+    width: 80%;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+#RelojIcon{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
